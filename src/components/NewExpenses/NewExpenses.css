@@ -1,0 +1,9 @@
+.new-expense-wrapper{
+    margin-top: 20px;
+    background-color: #37424a;
+    border-radius: 10px;
+    padding: 2rem;
+}
+.expense-wrapper h2{
+    margin: 0;
+}
