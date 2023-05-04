@@ -1,7 +1,7 @@
 import './App.css';
 import Expenses from './components/Expenses/Expenses';
 function App() {
-  const expenses = [
+  const INITIAL_EXPENSES = [
     {
       id: 'e1',
       title:'House Rent allowance',
@@ -26,7 +26,7 @@ function App() {
       <header>
         <h1>Expense Tracker application</h1>
       </header>
-      <Expenses expensesList={expenses}/>
+      <Expenses expensesList={INITIAL_EXPENSES}/>
     </div>
   );
 }

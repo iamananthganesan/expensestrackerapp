@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './ExpensesForm.css';
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
     //Recommanded way to update the state    
     const [expenseName, setExpenseName] = useState('');
     const [expenseAmount, setExpenseAmount] = useState('');
@@ -38,6 +38,10 @@ const ExpenseForm = () => {
             date: new Date(expenseDate)
         }
         console.log(expense);
+        props.onSaveExpenceData(expense)
+        setExpenseName('');
+        setExpenseAmount('');
+        setExpenseDate('');
     };
     return (
         <form onSubmit={expenseFormHandler} className="expense-form">
