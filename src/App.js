@@ -12,13 +12,13 @@ function App() {
       id: 'e2',
       title:'Monthly grocery items',
       amount: 5900,
-      date: new Date('2023,04,05')
+      date: new Date('2021,04,05')
     },
     {
       id: 'e3',
       title:'Maid allowance',
       amount: 3000,
-      date: new Date('2023,04,01')
+      date: new Date('2022,04,01')
     }
   ]
   return (

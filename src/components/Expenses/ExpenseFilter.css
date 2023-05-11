@@ -1,9 +1,8 @@
-.expensesWrapper > header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+label{
+    margin-right: 5px;
+    font-weight: 700;
 }
-.add-new-expenses-btn{
+select{
     padding: 15px;
     font-weight: 700;
     background-color: #0073b1;
@@ -13,5 +12,4 @@
     font-size: 1rem;
     border: none;
     outline: none; 
-    margin-right: 15px;
 }
