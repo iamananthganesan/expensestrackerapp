@@ -19,6 +19,18 @@ function App() {
       title:'Maid allowance',
       amount: 3000,
       date: new Date('2022,04,01')
+    },
+    {
+      id: 'e4',
+      title:'Comic books',
+      amount: 3500,
+      date: new Date('2023,01,05')
+    },
+    {
+      id: 'e5',
+      title:'Tablet',
+      amount: 18000,
+      date: new Date('2023,02,04')
     }
   ]
   return (

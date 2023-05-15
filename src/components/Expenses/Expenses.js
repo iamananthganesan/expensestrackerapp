@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import NewExpenses from "../NewExpenses/NewExpenses";
 import ExpensesItem from './ExpensesItem';
 import ExpenseFilter from './ExpenseFilter';
+import ExpensesChart from './ExpensesChart'
 import './Expenses.css'
 const Expenses = (props) => {
     const [enableNewExpenses, setEnableNewExpenses] = useState(false);
@@ -32,6 +33,7 @@ const Expenses = (props) => {
                 <button type="button" className="add-new-expenses-btn" onClick={addNewExpenseHandler}>Add New Expense</button>
                 <ExpenseFilter expenseFilterHandlerByYear={expenseFilterHandler} />
             </header>
+            <ExpensesChart expenses={expenseList} />
             {enableNewExpenses && <NewExpenses onAddNewExpense={addNewExpenseData} />}
             <div className="expensesWrapper-list">
                 { expenseList.length === 0 ? <p>No items found</p> : <>{ renderExpenseItems }</>}</div>
